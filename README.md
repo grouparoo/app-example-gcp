@@ -12,7 +12,7 @@ Limitations:
 - This quick configuration does not have application high-availability, as it relies on a single host. This is not a [12-factor app](https://12factor.net/) with configuration stored in the Environment
 - Will not re-deploy as your code changes. You can do that manually, or use a tool like Chef or Ansible.
 
-## Repository Configuration
+## How we got here
 
 1. Create a new Grouparoo project. Learn more @ https://www.grouparoo.com/docs/installation.
 
@@ -22,6 +22,16 @@ grouparoo init .
 ```
 
 2. Install the Grouparoo plugins you want, e.g.: `grouparoo install @grouparoo/postgres`. Learn more @ https://www.grouparoo.com/docs/installation/plugins
+
+## Running this Repo
+
+Assuming you have node.js installed (v12+):
+
+1. `git clone https://github.com/grouparoo/app-example-gcp.git`
+2. `cd app-example-gcp`
+3. `npm install`
+4. `cp .env.example .env`
+5. `npm start`
 
 ## Deployment Steps
 
@@ -143,7 +153,7 @@ You may want to modify logging behavior with:
 
 - `GROUPAROO_LOGS_STDOUT_DISABLE_TIMESTAMP=true`- Don't prepend timestamps to log messages
 - `GROUPAROO_LOGS_STDOUT_DISABLE_COLOR=true`- Disable colorizing log message lines
-- `GROUPAROO_LOGS_PATH="/var/log/grouparoo"`- Logs are stored in `/var/log/grouparoo` with this setting enabled.  You can store them wherever you like.
+- `GROUPAROO_LOGS_PATH="/var/log/grouparoo"`- Logs are stored in `/var/log/grouparoo` with this setting enabled. You can store them wherever you like.
 
 ---
 
