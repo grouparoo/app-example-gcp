@@ -31,7 +31,7 @@ Assuming you have node.js installed (v12+) and the Grouparoo CLI (`npm install -
 2. `cd app-example-gcp`
 3. `npm install`
 4. `cp .env.example .env`
-5. `grouparoo run`
+5. `npm start`
 
 ## Deployment Steps
 
