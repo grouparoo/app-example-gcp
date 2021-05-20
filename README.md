@@ -25,7 +25,7 @@ grouparoo init .
 
 ## Running this Repo
 
-Assuming you have node.js installed (v12+) and the Grouparoo CLI (`npm install -g grouparoo`):
+Assuming you have node.js installed (v12+):
 
 1. `git clone https://github.com/grouparoo/app-example-gcp.git`
 2. `cd app-example-gcp`
